@@ -1,7 +1,12 @@
 # Olist 이커머스 AI 서비스
 
-> 데이터 병합부터 AI 모델 학습, Gradio UI 구현, Hugging Face 배포까지 직접 구현한 이커머스 AI 서비스 프로젝트
-
+ 데이터 병합부터 AI 모델 학습, Gradio UI 구현, Hugging Face 배포까지 직접 구현한 이커머스 AI 서비스 프로젝트
+ 
+ Olist 이커머스 AI 서비스는 브라질 온라인 쇼핑몰 데이터를 활용해 <br>
+ 쇼핑몰 운영에서 자주 필요한 문제를 AI 기능으로 구현한 프로젝트입니다.
+<br>
+<br>
+<br>
 <br>
 
 <p align="center">
@@ -28,6 +33,8 @@
 </p>
 
 <br>
+<br>
+<br>
 
 ## 서비스 전체 화면
 
@@ -45,53 +52,6 @@
 </p>
 
 <br>
-
-## 모델 파일 안내
-
-이 프로젝트는 학습된 AI 모델 파일을 사용합니다.
-
-다만 일부 모델 파일은 용량이 커서 GitHub 일반 코드 저장소에 직접 포함하지 않고,  
-**GitHub Release 첨부 파일**로 별도 제공했습니다.
-
-<br>
-
-### Release에 포함된 모델 파일
-
-| 파일명 | 역할 |
-|---|---|
-| `part6_recommend_model.pkl` | 추천 시스템 모델 파일 |
-| `part7_sentiment_model.h5` | 감성분석 딥러닝 모델 파일 |
-| `part7_tokenizer.pkl` | 감성분석 Tokenizer 파일 |
-| `part8_sales_model.pkl` | 매출 예측 모델 파일 |
-| `part9_churn_model.pkl` | 고객 이탈 예측 모델 파일 |
-
-<br>
-
-### 모델 파일 위치
-
-로컬에서 실행하려면 Release에서 모델 파일을 다운로드한 뒤,  
-아래 구조처럼 `model` 폴더 안에 넣어야 합니다.
-
-    olist_ai_project/
-    │
-    ├── app.py
-    ├── requirements.txt
-    ├── part6_recommend_app.py
-    ├── part7_sentiment_app.py
-    ├── part8_sales_app.py
-    ├── part9_churn_app.py
-    │
-    └── model/
-        ├── part6_recommend_model.pkl
-        ├── part7_sentiment_model.h5
-        ├── part7_tokenizer.pkl
-        ├── part8_sales_model.pkl
-        └── part9_churn_model.pkl
-
-<br>
-
-> 코드 저장소에는 서비스 실행 코드와 포트폴리오 자료를 중심으로 업로드했고,  
-> 학습된 모델 파일은 Release에서 별도로 제공합니다.
 
 <br>
 
@@ -236,15 +196,15 @@ Gradio UI와 Hugging Face Spaces를 통해 실제 사용 가능한 형태로 배
 <br>
 
 ---
-
----
+<br>
+<br>
 
 ## 서비스 시연 화면
 
 ### 추천 시스템
 
 <p align="center">
-  <img width="1920" height="810" alt="part6" src="https://github.com/user-attachments/assets/9ca7a88f-5b98-4747-8792-2145b591fa97" />
+  <img width="881" height="655" alt="6" src="https://github.com/user-attachments/assets/ec0bb23c-df0a-444f-8a6f-8e23fcaae4c9" />
 </p>
 
 
@@ -254,7 +214,7 @@ Gradio UI와 Hugging Face Spaces를 통해 실제 사용 가능한 형태로 배
 ### 감성분석
 
 <p align="center">
-  <img width="1920" height="807" alt="part7" src="https://github.com/user-attachments/assets/90bfb54f-34f2-4da6-b9a6-9a45026b33f2" />
+  <img width="878" height="656" alt="7" src="https://github.com/user-attachments/assets/f8ff2996-d095-4da3-913d-a415374048e0" />
 </p>
 
 <br>
@@ -262,7 +222,7 @@ Gradio UI와 Hugging Face Spaces를 통해 실제 사용 가능한 형태로 배
 ### 매출 예측
 
 <p align="center">
-  <img width="1920" height="811" alt="part8" src="https://github.com/user-attachments/assets/8f0be512-5d2c-48df-9f90-46cdfc2b533d" />
+  <img width="874" height="487" alt="8" src="https://github.com/user-attachments/assets/afd89ee2-c47a-4be8-8a8b-5b920aba4e81" />
 </p>
 
 <br>
@@ -270,13 +230,61 @@ Gradio UI와 Hugging Face Spaces를 통해 실제 사용 가능한 형태로 배
 ### 고객 이탈 예측
 
 <p align="center">
-  <img width="1918" height="810" alt="part9" src="https://github.com/user-attachments/assets/de2f4270-0d64-4483-8ec4-d3d7265cdbb9" />
-
+ <img width="873" height="424" alt="9" src="https://github.com/user-attachments/assets/781e3727-67b6-4118-b206-2af24186aa36" />
 </p>
 
 <br>
 
 ---
+## 모델 파일 안내
+
+이 프로젝트는 학습된 AI 모델 파일을 사용합니다.
+
+다만 일부 모델 파일은 용량이 커서 GitHub 일반 코드 저장소에 직접 포함하지 않고,  
+**GitHub Release 첨부 파일**로 별도 제공했습니다.
+
+<br>
+
+### Release에 포함된 모델 파일
+
+| 파일명 | 역할 |
+|---|---|
+| `part6_recommend_model.pkl` | 추천 시스템 모델 파일 |
+| `part7_sentiment_model.h5` | 감성분석 딥러닝 모델 파일 |
+| `part7_tokenizer.pkl` | 감성분석 Tokenizer 파일 |
+| `part8_sales_model.pkl` | 매출 예측 모델 파일 |
+| `part9_churn_model.pkl` | 고객 이탈 예측 모델 파일 |
+
+<br>
+
+### 모델 파일 위치
+
+로컬에서 실행하려면 Release에서 모델 파일을 다운로드한 뒤,  
+아래 구조처럼 `model` 폴더 안에 넣어야 합니다.
+
+    olist_ai_project/
+    │
+    ├── app.py
+    ├── requirements.txt
+    ├── part6_recommend_app.py
+    ├── part7_sentiment_app.py
+    ├── part8_sales_app.py
+    ├── part9_churn_app.py
+    │
+    └── model/
+        ├── part6_recommend_model.pkl
+        ├── part7_sentiment_model.h5
+        ├── part7_tokenizer.pkl
+        ├── part8_sales_model.pkl
+        └── part9_churn_model.pkl
+
+<br>
+
+> 코드 저장소에는 서비스 실행 코드와 포트폴리오 자료를 중심으로 업로드했고,  
+> 학습된 모델 파일은 Release에서 별도로 제공합니다.
+
+<br>
+
 
 ## 주요 기능
 
